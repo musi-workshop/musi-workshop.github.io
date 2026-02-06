@@ -1,0 +1,274 @@
+% WS proposal template for ICCV 2025
+% V. Albiero, J. Tompkin
+
+% Adopted from ECCV 2020, ECCV 2022, ICCV 2023 templates by M. Cho, B. Ham, A. Bartoli, A. Fusiello, A. Vedaldi, L. Karlinsky, T. Michaeli, K. Nishino
+
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xspace}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{color,colortbl}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\newgeometry{vmargin={30mm, 30mm}, hmargin={30mm,30mm}} 
+
+\newcommand{\boldparagraph}[1]{\vspace{0.2em}\noindent\textbf{#1}}
+\newcommand{\TODO}[1]{\textbf{\color{red}[TODO: #1]}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+
+
+\newcommand\conf{CVPR 2026\xspace}
+\title{\conf \\The 2nd Workshop on Multimodal Spatial Intelligence}
+\author{}
+\date{}
+
+
+% instructions
+\def\c#1{\textcolor{gray}{#1}}
+% indicates parts to complete
+\def\x{\textcolor{red}{xxx}}
+
+\begin{document}
+
+\maketitle
+
+% The instructions are in \c{grey} and parts to complete are indicated by \x. Submit your proposal as a single pdf file named \texttt{ACRONYM.pdf}, where \texttt{ACRONYM} is the acronym of your proposed workshop.
+
+\section{Summary}
+\begin{tabular}{ll}
+  \hline
+  Workshop title & The 2nd Workshop on Multimodal Spatial Intelligence \\
+  Acronym & MUSI\\
+  Edition (1st, 2nd, ...) & 2nd \\
+  Keywords & Spatial Reasoning, Multimodal Large Language Model, \\
+   & World Models, Embodied AI, 3D Understanding\\
+  Primary contact name and email & Phillip Y. Lee (\href{phillip0701@kaist.ac.kr}{\url{phillip0701@kaist.ac.kr}}) \\
+  Half or full day & Full \\
+  Anticipated audience size & 100-200 \\
+  Requested number of poster boards & NA \\
+  Papers published in proceedings? & NA \\
+  Special requests & None \\
+  \hline
+\end{tabular}
+
+
+\section{Topic}
+% \c{Topics that will be covered, audience, and relevance to the computer vision community and potential \conf attendees.}
+% \x
+We invite keynote talks and have a panel discussion on topics related to multi-modal spatial intelligence.
+The workshop will cover topics including, but not limited to::
+\begin{itemize}[noitemsep,leftmargin=*]
+\item \textbf{Enhancing Spatial Reasoning in MLLMs}: We consider multimodal LLMs (MLLMs) as the core of spatial intelligence. Therefore, one key is to improve how MLLMs understand and reason about low-level to high-level spatial information using images, videos, and 3D representations.
+\item \textbf{Going Beyond Conventional Perception with Multimodal Models}: Leveraging multimodal models to improve semantic and geometric reasoning in 2D/3D perception, reconstruction, and temporal scene understanding.
+\item \textbf{Spatial Intelligence for AI Agents}: Advancing MLLMs for real-world applications in assistive AI agent, autonomous systems, including planning, interaction, and navigation.
+% \item \textbf{Open-Vocabulary 2D/3D Perception}: Performing open-set 2D/3D object detection, segmenttaion, and reasoning across diverse environments
+\item \textbf{Physical World Modelling}: Interactively understanding, modeling, and reconstructing dynamic 3D scenes over time from multi-modal inputs.
+\item \textbf{Trust, Ethics, and Societal Impact}: Addressing the reliability, biases, and ethical implications of spatial intelligence in AI systems.
+\end{itemize}
+
+
+
+\section{Organizers and speakers}
+\subsection{List of organizers}
+\begin{tabular}{llll}
+Phillip Y. Lee & KAIST & \href{mailto:phillip0701@kaist.ac.kr}{\url{phillip0701@kaist.ac.kr}} \\
+Juil Koo & KAIST & \href{mailto:63days@kaist.ac.kr}{\url{63days@kaist.ac.kr}} \\
+Songyou Peng & Google DeepMind & \href{mailto:songyou@google.com}{\url{songyou@google.com}}\\
+Mikaela Angelina Uy & Research Scientist at NVIDIA & \href{mailto:mikaelaangel@nvidia.com}{\url{mikaelaangel@nvidia.com}}\\
+Sanja Fidler & University of Toronto \& NVIDIA & \href{mailto:fidler@cs.toronto.edu}{\url{fidler@cs.toronto.edu}}\\
+Leonidas J. Guibas & Stanford University \& Google DeepMind & \href{mailto:guibas@cs.stanford.edu}{\url{guibas@cs.stanford.edu}}\\
+Minhyuk Sung & KAIST & \href{mailto:mhsung@kaist.ac.kr}{\url{mhsung@kaist.ac.kr}} \\
+\end{tabular}
+
+\subsection{Organizers' experience and background}
+% \c{Information that supports the organizers' ability to run a workshop, and appropriateness to a workshop on this topic, including brief bios as necessary.}
+The organizing team contains a large and diverse selection of individuals from the computer vision and machine learning community, both from industry and various academic institutions. Overall, the team has extensive experience with multi-modal large language model, spatial reasoning and 3D scene understanding.
+
+\boldparagraph{Phillip Y. Lee} is a Ph.D. student at KAIST.
+
+\boldparagraph{Juil Koo} is a Ph.D. student at KAIST, working on generative models across diverse domains, as well as vision and language multi-modality.
+
+
+\boldparagraph{Songyou Peng} is a research scientist at Google DeepMind, working on spatial intelligence in MLLM and world-scale 3D scene understanding. 
+He was an Area Chair for ICCV'25, ICML'25 and 3DV'24. He is an experienced workshop organizer, having co-organized the \href{https://opensun3d.github.io}{OpenSUN3D workshop} at ICCV'23, CVPR'24, and ECCV'24, co-organizer of the \href{https://focus-workshop.github.io/}{FOCUS workshop} at ECCV'24, and co-organizer of \href{https://scene-understanding.com/}{workshop in 3D scene understanding} at CVPR'25.
+
+\boldparagraph{Mikaela Angelina Uy} is a research scientist at NVIDIA Spatial Intelligence Lab, working on 3D geometry/shape analysis, scene understanding and spatial intelligence. She was selected as an EECS Rising Star and has also served as an area chair in 3DV '26 and program committee in Eurographics '25, '26.
+
+\boldparagraph{Leonidas J. Guibas} is a Full Professor at Stanford University and a Principal Research Scientist at Google DeepMind. He has been a key organizer and chair of numerous major conferences in computer vision, machine learning, and 3D computer graphics, significantly shaping the field over his career.
+
+\boldparagraph{Minhyuk Sung} is an associate professor at KAIST. 
+
+
+
+% \boldparagraph{Fei-Fei Li} is a Full Professor at Stanford University and the Co-Founder of World Labs. A leading advocate for spatial intelligence, her research and startup, World Labs, are pushing the boundaries in this domain. She is a board member of the Computer Vision Foundation (CVF) and has played a key role in organizing major computer vision conferences, along with 20+ workshops and tutorials.
+
+
+\subsection{List of invited speakers}
+
+
+\paragraph{Ranjay Krishna (UW/AI2)} \href{https://www.ranjaykrishna.com}{\url{ranjaykrishna.com}} \hfill \textbf{[\textcolor{Green}{Confirmed}]}\\
+Ranjay Krishna is an Assistant Professor at the Paul G. Allen School of Computer Science \& Engineering. 
+His research focuses on improving multimodal models’ spatial and temporal reasoning, particularly in the context of visual and linguistic understanding.
+His recent works, including \emph{Molmo and PixMo}, \emph{Coarse Correspondences Boost Spatial-Temporal Reasoning in Multimodal Language Models}, and \emph{Perception Tokens Enhance Visual Reasoning in Multimodal Language Models}, are highly relevant to the workshop.
+His expertise directly contributes to discussions on leveraging multimodal large language models (MLLMs) to enhance 2D and 3D spatial intelligence, making him a key speaker for our event.
+
+\paragraph{Saining Xie (NYU/Google DeepMind)}
+\href{https://www.sainingxie.com/}{\url{sainingxie.com}} \hfill \textbf{[\textcolor{Green}{Confirmed}]}\\
+Saining Xie is an Assistant Professor at New York University and a Research Scientist at Google DeepMind.
+His research focuses on advancing robust visual intelligence by building scalable and reliable systems that can interpret visual events, answer questions on demand, and develop a common-sense understanding of the world.
+His recent works, including \emph{Cambrian-1}, \emph{V-IRL}, \emph{Thinking in Space} and \emph{Eyes Wide Shut} are highly relevant to our workshop.
+His expertise in vision-centric multimodal LLMs and their spatial reasoning capabilities makes him a key contributor to discussions on improving 2D and 3D spatial intelligence.
+
+\paragraph{Katerina Fragkiadaki (CMU)}
+
+\paragraph{Chuang Gan (UMass Amherst / MIT-IBM Watson AI Lab)}
+
+\paragraph{Angel X. Chang (SFU)}
+
+\paragraph{Roozbeh Mottaghi (FAIR / UW)}
+
+\paragraph{Kristen Grauman (UT Austin)}
+
+
+% \paragraph{Manling Li (Northwestern University)} \href{https://limanling.github.io/}{\url{limanling.github.io}} \hfill \textbf{[\textcolor{Green}{Confirmed}]}\\
+% Manling Li is an Assistant Professor at Northwestern University. Her research focuses on making AI and large language models (LLMs) more beneficial for humans by exploring the intersection of language, vision, robotics, and their societal impact. She has made significant contributions to the controllability of LLMs, with her work LM-Steer receiving the ACL'24 Outstanding Paper Award.
+% Her recent works, including \emph{Re-thinking Temporal Search for Long-Form Video Understanding}, \emph{LayoutVLM}, \emph{HourVideo}, and \emph{Embodied Agent Interface} align closely with our workshop. 
+% Her expertise in spatial reasoning, multimodal learning, and the ethical implications makes her a valuable speaker and panelist.
+
+% \paragraph{Yue Wang (USC/NVIDIA)} \href{https://yuewang.xyz/}{\url{yuewang.xyz}} \hfill \textbf{[\textcolor{Green}{Confirmed}]}\\
+% Yue Wang is an Assistant Professor at the University of Southern California and a Research Scientist at NVIDIA Research. His research focuses on the intersection of computer vision, 3D perception, and multimodal learning, with an emphasis on spatial reasoning and scene reconstruction.
+% His recent works, including \emph{PhysBench}, \emph{Large Spatial Model} and \emph{STORM} are highly relevant to our workshop.
+% His expertise in improving spatial understanding in multimodal large language models (MLLMs) and large-scale 3D scene reconstruction makes him a valuable contributor to our workshop.
+
+% \paragraph{Dr. Qianqian Wang (UC Berkeley)} \href{https://qianqianwang68.github.io/}{\url{qianqianwang68.github.io}} \hfill \textbf{[\textcolor{Green}{Confirmed}]}\\
+% Qianqian Wang is a postdoctoral researcher at UC Berkeley, where her research focuses on understanding and modeling the dynamic 3D world from everyday images and videos. Her long-term goal is to develop intelligent systems capable of perceiving, understanding, and continually learning from the complex, ever-changing physical world.
+% Her recent works, including \emph{Cut3R}, \emph{OmniMotion}, and \emph{Shape of Motion}, align closely with the themes of our workshop.
+% Her expertise in spatio-temporal 3D scene understanding and dynamic perception is highly relevant for discussions on spatial-temporal reconstruction and multimodal learning for reasoning about real-world environments.
+
+
+\subsection{Diversity}
+% \c{Discuss how diversity is being addressed among (a) the organizing committee and (b) the invited speakers.}
+The proposed goals of the workshop will be accomplished by inviting leaders from relevant Computer
+Vision, Multi-Modal LLM, and Robotics fields.
+We will have a line-up of
+five speakers together representing academic labs (UC Berkeley, Northwestern University, NYU, UW, USC) and industries (Google DeepMind, NVIDIA, AI2) with diverse backgrounds and seniority. 
+Our invited speakers also have a gender balance with
+2 female and 3 male speakers. 
+The organization team consists of 7 members, with a mix of academic and industry research scientists representing various cultural backgrounds. The team comprises of individuals with a diverse range of expertise, providing a rich blend of perspectives and experiences. With the objective of bringing together different subfields, the workshop is anticipated to attract participants from varying backgrounds and areas of expertise. This will encourage lively cross-disciplinary discussions and exchanges.
+
+
+\section{Format and logistics}
+% \conf will be in-person. There may be remote access provided by the conference (e.g., Zoom) but this is to be decided; workshop organizers may also arrange their own.
+% The main goal of our workshop is to build and foster the community around the rising topic of spatial intelligence in multi-modal large language models.
+We aim for an in-person workshop with the option of virtual attendance via zoom for our invited speakers and registered participants.
+We intend to stream the entire workshop, including keynote talks, Q\&A sessions and panel discussion, with participants joining via zoom and being able to ask questions in the chat.
+If approved, we will live-stream the workshop on YouTube for increased visibility.
+% The in-person poster session will provide a valuable platform for engaging the audience and actively connecting with the community.
+% All accepted works will also be asked to upload a 5 min spotlight video that will be hosted on the workshop's website for our virtual attendees.
+
+
+\subsection{Schedule}
+\definecolor{orga}{RGB}{214, 234, 248}
+\definecolor{keyn}{RGB}{252, 243, 207}
+\definecolor{chal}{RGB}{213, 245, 227}
+\definecolor{disc}{RGB}{250, 219, 216}
+
+\begin{tabular}{lll}
+  \toprule
+  \rowcolor{orga} 13:15 -- 13:30 & Welcome \& Introduction              & 15 min\\
+  \rowcolor{keyn} 13:30 -- 14:00 & Keynote Talk 1                       & 30 min\\
+  \rowcolor{keyn} 14:00 -- 14:30 & Keynote Talk 2                       & 30 min\\
+  \rowcolor{keyn} 14:30 -- 15:00 & Keynote Talk 3                       & 30 min\\
+  \rowcolor{disc} 15:00 -- 15:30 & Coffee Break \& Social              & 30 min\\
+  \rowcolor{keyn} 15:30 -- 16:00 & Keynote Talk 4                       & 30 min\\
+  \rowcolor{keyn} 16:00 -- 16:30 & Keynote Talk 5                       & 30 min\\
+  \rowcolor{chal} 16:30 -- 17:00 & Panel Discussion                   & 30 min\\
+  \rowcolor{orga} 17:00 -- 17:10 & Closing Remarks                      & 10 min\\
+\bottomrule
+\end{tabular}
+
+
+
+% \subsection{Paper submission}
+% \c{If including paper submissions: (a) Tentative program committee, (b), Paper review timeline, (c) Will these papers be published in proceedings? Note that paper submissions must adhere to the \conf paper submission style, format, and length restrictions, and organizers must meet a deadline (which is still to be determined) for providing the final documents to the publication chair to be included within the proceedings.}
+% \x
+% \subsection{Competition}
+% \c{If the workshop hosts a competition, describe it: (a) Explain which datasets will be used, (b) Whether the datasets are already available or not; in the latter case, provide an estimate when the datasets will be available and describe your contingency plan in case of delays; (c) Ethical considerations for the datasets, (d) How submissions will be evaluated, (e) The timeline for the competition (start, submission deadline, decisions to participants).}
+% \x
+\subsection{Special requests}
+% \c{State special space or equipment requests, if any.}
+% \x
+None
+
+\section{Broader impacts}
+% \c{Tell us of any broader impacts around the topic (if any)}
+The ability to robustly perceive, reason about, and interact with the 3D world is a major milestone toward more capable and reliable AI systems. Recent multi-modal large language models (MLLMs) have begun to exhibit visual-spatial intelligence, enabling advanced scene understanding and decision-making that goes beyond simple open-vocabulary object recognition. These developments exhibit potentials across a wide range of applications from robotics perception and planning to AR/VR and assistive technologies. 
+
+However, rapid progress in MLLMs also raises critical concerns around data biases, ethical deployment, real-world reliability, and misuse. To foster a responsible forum, we will devote a dedicated part in the panel discussion to these issues, openly debating potential risks and responsible deployment strategies. 
+
+Through this workshop, our goal is to promote collaboration among researchers, define and refine relevant tasks and benchmarks, and chart a path toward more versatile, transparent, and accountable visual-spatial understanding and reasoning with multi-modal LLMs.
+
+
+% \subsection{Social considerations}
+% \c{Tell us social considerations around the topic (if any)}
+% \x
+% \subsection{Ethical considerations}
+% \c{Tell us ethical considerations around the topic (if any)}
+% \x
+
+% Multi-modal LLMs that exhibit visual-spatial intelligence can significantly benefit areas such as robotics, AR/VR, and assistive technologies, yet also pose risks related to biased data, surveillance, and misuse. 
+
+\section{Relationship to previous workshops}
+% \c{Describe how this proposal relates to previous workshops held at CVPR/ICCV/ECCV/etc. in the last three years.}
+% \x
+\subsection{Differences to most relevant previous workshops}
+% There are two most relevant workshops to ours, and we will discuss the differences to them.
+
+\boldparagraph{\textit{``3D Scene Understanding for Vision, Graphics, and Robotics'' workshop series}} (CVPR'21, CVPR'23, CVPR'25).
+Their primary goal is to explore questions about how 3D understanding and interaction can drive forward Embodied AI and steps toward General AI. While these efforts certainly intersect with our interest in embodied and interactive systems, their focus tends to be more vision-centric, emphasizing the integration of 3D representations with robotics and graphics.
+
+In contrast, \textbf{our proposed workshop places multi-modal large language models (MLLMs) and their emerging visual-spatial intelligence at the center of the discussion}. 
+We explore how MLLMs can reason about and interact with spatial environments, bridging language, perception, and decision-making in ways that go beyond traditional 3D understanding.
+
+\vspace{0.5em}
+\boldparagraph{\textit{``Open-World 3D Scene Understanding (OpenSUN3D)'' workshop series}} (ICCV’23, CVPR’24, ECCV’24, CVPR’25).
+They have served as a hub for open-set 3D understanding tasks, propelled by progress in visual-language models such as CLIP. Their focus is on overcoming the limitations of closed-set training and expanding to tasks like affordance prediction, materials identification, and recognition of entirely new concepts. 
+Our workshop \textbf{builds on these open-set capabilities but goes further by investigating how multi-modal LLMs can move beyond 3D understanding to encompass deeper and more advanced spatial reasoning, planning, and interaction.}
+
+\subsection{What Makes Our Workshop Unique}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{MLLMs at the Core of Spatial Intelligence.}
+    We place multi-modal LLMs at the core, examining how they learn, interpret, and act on spatial information from images, videos, and 3D data, enabling deeper scene comprehension in the physical world.
+    \item \textbf{Beyond Conventional Perception.}
+    Unlike previous workshops that focus on perception tasks like detection and segmentation, we aim to explore how MLLMs develop deeper spatial reasoning, including 3D world modeling, planning, interaction, and memory.
+    With contributions from experts in spatio-temporal modeling (Qianqian Wang), spatial reasoning in multimodal LLMs (Saining Xie, Manling Li, Ranjay Krishna), and 3D perception (Yue Wang), we will discuss how new models move beyond static understanding to real-world environment.
+    \item \textbf{Multi-disciplinary Scope.}
+    Spatial intelligence spans multiple domains. Our workshop brings together top researchers from computer vision, robotics, graphics, and NLP to tackle challenges at the intersection of visual understanding, multimodal learning, and embodied AI.
+    \item \textbf{Forward-Looking Goals and Community Building.}
+    While previous workshops have laid critical groundwork (e.g., new datasets, benchmarks, and evaluation metrics for open-vocabulary 3D tasks), our workshop aspires to push these boundaries by encouraging new datasets and benchmarks that target spatial reasoning (e.g. \href{https://vision-x-nyu.github.io/thinking-in-space.github.io/}{Thinking in Space}). This is a brand new research area so we aim to foster collaborations that tackle these complex challenges in spatial intelligence research.
+\end{itemize}
+
+
+\newpage
+
+% {\small
+% \bibliographystyle{ieee_fullname}
+% \bibliography{bibliography}
+% }
+
+\end{document}

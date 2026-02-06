@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSI Workshop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Updated section-title for a cleaner look */
+        .section-title {
+            font-size: 1.75rem;
+            /* 28px */
+            font-weight: 700;
+            color: #4338ca;
+            /* text-indigo-700 */
+            border-bottom: 2px solid #e5e7eb;
+            /* border-gray-200 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        indigo: {
+                            '50': '#eef2ff',
+                            '100': '#e0e7ff',
+                            '200': '#c7d2fe',
+                            '300': '#a5b4fc',
+                            '400': '#818cf8',
+                            '500': '#6366f1',
+                            '600': '#4f46e5',
+                            '700': '#4338ca',
+                            '800': '#3730a3',
+                            '900': '#312e81',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto max-w-5xl px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 font-bold text-lg text-indigo-700">
+                    MUSI @ ICCV 2025
+                </div>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="#about" class="text-gray-600 hover:text-indigo-600 font-medium">About</a>
+                    <a href="#speakers" class="text-gray-600 hover:text-indigo-600 font-medium">Speakers</a>
+                    <a href="#schedule" class="text-gray-600 hover:text-indigo-600 font-medium">Program</a>
+                    <a href="#organizers" class="text-gray-600 hover:text-indigo-600 font-medium">Organizers</a>
+                    <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium">Contact</a>
+                    <div id="all-editions-container" data-root-path=".." data-active="iccv2025"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto max-w-5xl px-4 py-12">
+
+        <header class="text-center mb-12 bg-white rounded-lg shadow-lg p-10">
+            <!-- <h1 class="text-7xl font-extrabold mb-4 text-gradient-rainbow">MUSI</h1> -->
+            <img class="w-160 h-32 mx-auto" src="img/logo_musi_iccv25.png">
+            <h1 class="text-4xl font-bold text-gray-900">1st Workshop on Multimodal Spatial Intelligence</h1>
+            <p class="mt-3 text-2xl text-indigo-600 font-medium">October 20 (1 pm - 5:30 pm), 2025</p>
+            <p class="mt-3 text-2xl font-medium">
+                Room 306 A
+            </p>
+        </header>
+
+        <section id="about" class="mb-12 bg-white rounded-lg shadow-lg p-8">
+            <h2 class="section-title">About the Workshop</h2>
+            <p class="mb-6 text-gray-700 leading-relaxed">
+                Our multi-modal spatial intelligence workshop aims to bring together researchers from computer vision,
+                robotics, graphics, and NLP for a half-day of discussion and talks at the intersection of visual
+                understanding, multimodal learning, and embodied AI. Our focus is on placing multi-modal large language
+                models (MLLMs) at the core of spatial intelligence-- exploring how they can learn, interpret, and act on
+                spatial information from images, videos, and 3D data.
+            </p>
+            <div>
+                <h3 class="font-semibold mb-3 text-gray-900">Keywords:</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span
+                        class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Spatial
+                        Reasoning</span>
+                    <span
+                        class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Multimodal
+                        Large Language Model</span>
+                    <span
+                        class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">World
+                        Models</span>
+                    <span
+                        class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Embodied
+                        AI</span>
+                    <span
+                        class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">3D
+                        Understanding</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="speakers" class="mb-12 bg-white rounded-lg shadow-lg p-8">
+            <h2 class="section-title">Invited Speakers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/saining.png"
+                        alt="Photo of Saining Xie">
+                    <h3 class="font-bold text-lg"><a href="https://www.sainingxie.com/">Saining Xie</a></h3>
+                    <p class="text-sm text-gray-600">NYU / Google DeepMind</p>
+                </div>
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/manling.jpg"
+                        alt="Photo of Manling Li">
+                    <h3 class="font-bold text-lg"><a href="https://limanling.github.io/">Manling Li</a></h3>
+                    <p class="text-sm text-gray-600">Northwestern University</p>
+                </div>
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/ranjay.jpeg"
+                        alt="Photo of Ranjay Krishna">
+                    <h3 class="font-bold text-lg"><a href="https://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>
+                    </h3>
+                    <p class="text-sm text-gray-600">UW / AI2</p>
+                </div>
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/yue.png"
+                        alt="Photo of Yue Wang">
+                    <h3 class="font-bold text-lg"><a href="https://yuewang.xyz/">Yue Wang</a></h3>
+                    <p class="text-sm text-gray-600">USC / NVIDIA</p>
+                </div>
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/qianqian.jpg"
+                        alt="Photo of Qianqian Wang">
+                    <h3 class="font-bold text-lg"><a href="https://qianqianwang68.github.io/">Qianqian Wang</a></h3>
+                    <p class="text-sm text-gray-600">UC Berkeley</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="mb-12 bg-white rounded-lg shadow-lg p-8">
+            <h2 class="section-title">Program</h2>
+            <div class="overflow-x-auto rounded-lg shadow-md border border-gray-200">
+                <table class="w-full text-left text-gray-700">
+                    <tbody class="text-sm leading-relaxed">
+                        <tr class="bg-purple-100 border-b border-purple-200">
+                            <td class="px-6 py-4 font-mono whitespace-nowrap text-indigo-800"><b>13:00 – 13:10</b></td>
+                            <td class="px-6 py-4">
+                                <span class="block text-base font-semibold text-gray-900">Welcome & Introduction</span>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-blue-50 border-b border-blue-100">
+                            <td class="px-6 py-4 font-mono whitespace-nowrap text-indigo-800"><b>13:10 – 13:50</b></td>
+                            <td class="px-6 py-4">
+                                <span class="block text-base font-semibold text-gray-900">Generate Robotic Data with
+                                    Spatial Intelligence
+                                    <a href="files/talk_yue_musi_2025.pdf"
+                                        class="text-sm font-medium text-indigo-600 hover:underline ml-2">[Slides]</a>
+                                </span>
+                                <span class="block mt-0.5 text-sm text-gray-600">
+                                    <a href="https://yuewang.xyz/"
+                                        class="font-semibold text-indigo-700 hover:underline">Yue Wang</a> (USC /
+                                    NVIDIA)
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-blue-50 border-b border-blue-100">
+                            <td class="px-6 py-4 font-mono whitespace-nowrap text-indigo-800"><b>13:50 – 14:30</b></td>
+                            <td class="px-6 py-4">
+                                <span class="block text-base font-semibold text-gray-900">
+                                    Towards Spatial Supersensing
+                                    <a href="files/talk_saining_musi_2025.pdf"
+                                        class="text-sm font-medium text-indigo-600 hover:underline ml-2">[Slides]</a>
+                                </span>
+                                <span class="block mt-0.5 text-sm text-gray-600">
+                                    <a href="https://www.sainingxie.com/"
+                                        class="font-semibold text-indigo-700 hover:underline">Saining Xie</a> (NYU /
+                                    Google DeepMind)
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-blue-50 border-b border-blue-100">
+                            <td class="px-6 py-4 font-mono whitespace-nowrap text-indigo-800"><b>14:30 – 15:10</b></td>
+                            <td class="px-6 py-4">
+                                <span class="block text-base font-semibold text-gray-900">Why is Spatial Understanding
+                                    Hard for VLMs?
+                                    <a href="files/talk_manling_musi_2025.pdf"
+                                        class="text-sm font-medium text-indigo-600 hover:underline ml-2">[Slides]</a>
+                                </span>
+                                <span class="block mt-0.5 text-sm text-gray-600">
+                                    <a href="https://limanling.github.io/"
+                                        class="font-semibold text-indigo-700 hover:underline">Manling Li</a>
+                                    (Northwestern University)
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-red-50 border-b border-red-100">
+                            <td class="px-6 py-4 font-mono whitespace-nowrap text-indigo-800"><b>15:10 – 15:30</b></td>
+                            <td class="px-6 py-4">
+                                <span class="block text-base font-semibold text-gray-900">☕ Coffee Break & Social</span>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-blue-50 border-b border-blue-100">
+                            <td class="px-6 py-4 font-mono whitespace-nowrap text-indigo-800"><b>15:30 – 16:10</b></td>
+                            <td class="px-6 py-4">
+                                <span class="block text-base font-semibold text-gray-900">Visual Reasoning Will Be
+                                    Bigger Than Language Reasoning
+                                    <a href="files/talk_ranjay_musi_2025.pdf"
+                                        class="text-sm font-medium text-indigo-600 hover:underline ml-2">[Slides]</a>
+                                </span>
+                                <span class="block mt-0.5 text-sm text-gray-600">
+                                    <a href="https" class="font-semibold text-indigo-700 hover:underline">Ranjay
+                                        Krishna</a> (UW / AI2)
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-blue-50 border-b border-blue-100">
+                            <td class="px-6 py-4 font-mono whitespace-nowrap text-indigo-800"><b>16:10 – 16:50</b></td>
+                            <td class="px-6 py-4">
+                                <span class="block text-base font-semibold text-gray-900">On Latent Abilities Underlying
+                                    Spatial Intelligence
+                                    <a href="files/talk_qianqian_musi_2025.pdf"
+                                        class="text-sm font-medium text-indigo-600 hover:underline ml-2">[Slides]</a>
+                                </span>
+                                <span class="block mt-0.5 text-sm text-gray-600">
+                                    <a href="https://qianqianwang68.github.io/"
+                                        class="font-semibold text-indigo-700 hover:underline">Qianqian Wang</a> (UC
+                                    Berkeley)
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-green-50 border-b border-green-100">
+                            <td class="px-6 py-4 font-mono whitespace-nowrap text-indigo-800"><b>16:50 – 17:20</b></td>
+                            <td class="px-6 py-4">
+                                <span class="block text-base font-semibold text-gray-900">Panel Discussion: Future of
+                                    Multimodal Spatial Intelligence</span>
+                                <ul class="list-disc pl-5 mt-1.5 text-sm text-gray-600">
+                                    <li><span class="block mt-0.5 text-sm text-gray-600">
+                                            <a href="https://profiles.stanford.edu/leonidas-guibas"
+                                                class="font-semibold text-indigo-700 hover:underline">Leo Guibas</a>
+                                            (Stanford / Google DeepMind)</span>
+                                    </li>
+                                    <li><a href="https://limanling.github.io/"
+                                            class="font-semibold text-indigo-700 hover:underline">Manling Li</a>
+                                        (Northwestern University)</span>
+                                    </li>
+                                    <li><a href="https" class="font-semibold text-indigo-700 hover:underline">Ranjay
+                                            Krishna</a>
+                                        (UW / AI2)</span>
+                                    </li>
+                                    <li><a href="https://yuewang.xyz/"
+                                            class="font-semibold text-indigo-700 hover:underline">Yue Wang</a>
+                                        (USC / NVIDIA)</span>
+                                    </li>
+                                    <li><a href="https://fxia22.github.io/"
+                                            class="font-semibold text-indigo-700 hover:underline">Fei Xia</a>
+                                        (Google DeepMind)</span>
+                                    </li>
+                                </ul>
+                                Modulator: <a href="https://pengsongyou.github.io/"
+                                    class="font-semibold text-indigo-700 hover:underline">Songyou Peng</a>
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-purple-100 border-b border-purple-200">
+                            <td class="px-6 py-4 font-mono whitespace-nowrap text-indigo-800"><b>17:20 – 17:30</b></td>
+                            <td class="px-6 py-4">
+                                <span class="block text-base font-semibold text-gray-900">Concluding Remarks</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+        <section id="organizers" class="mb-12 bg-white rounded-lg shadow-lg p-8">
+            <h2 class="section-title">Organizers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 items-start">
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/songyou.jpg"
+                        alt="Photo of Songyou Peng">
+                    <h3 class="font-bold text-lg">Songyou Peng</h3>
+                    <p class="text-sm text-gray-600">Google DeepMind</p>
+                </div>
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/jihan.jpg"
+                        alt="Photo of Jihan Yang">
+                    <h3 class="font-bold text-lg">Jihan Yang</h3>
+                    <p class="text-sm text-gray-600">NYU</p>
+                </div>
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/kyle.jpg"
+                        alt="Photo of Kyle Genova">
+                    <h3 class="font-bold text-lg">Kyle Genova</h3>
+                    <p class="text-sm text-gray-600">Google DeepMind</p>
+                </div>
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/tom.jpg"
+                        alt="Photo of Thomas Funkhouser">
+                    <h3 class="font-bold text-lg">Tom Funkhouser</h3>
+                    <p class="text-sm text-gray-600">Google DeepMind</p>
+                </div>
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/feifei.jpg"
+                        alt="Photo of Fei-Fei Li">
+                    <h3 class="font-bold text-lg">Fei-Fei Li</h3>
+                    <p class="text-sm text-gray-600">Stanford / World Labs</p>
+                </div>
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/leo.jpg"
+                        alt="Photo of Leonidas J. Guibas">
+                    <h3 class="font-bold text-lg">Leo Guibas</h3>
+                    <p class="text-sm text-gray-600">Stanford / Google DeepMind</p>
+                </div>
+                <div
+                    class="text-center p-4 rounded-lg bg-gray-50 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                    <img class="w-32 h-32 rounded-full mx-auto mb-3 shadow-md" src="img/saining.png"
+                        alt="Photo of Saining Xie">
+                    <h3 class="font-bold text-lg">Saining Xie</h3>
+                    <p class="text-sm text-gray-600">NYU / Google DeepMind</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-12 bg-white rounded-lg shadow-lg p-8">
+            <h2 class="section-title">Contact</h2>
+            <p class="text-gray-700">For any questions, please reach out to the primary contact:</p>
+            <a href="mailto:songyou@google.com"
+                class="inline-block bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors mt-4">
+                Contact Songyou Peng
+            </a>
+        </section>
+
+    </div>
+
+    <footer class="text-center py-8">
+        <p class="text-sm text-gray-500">&copy; 2025 MUSI Workshop Organizers</p>
+    </footer>
+
+    <script src="../js/nav-dropdown.js"></script>
+</body>
+
+</html>

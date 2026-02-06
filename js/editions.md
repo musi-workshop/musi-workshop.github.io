@@ -1,0 +1,2 @@
+- [CVPR 2026](index.html) <!-- id: cvpr2026 -->
+- [ICCV 2025](iccv2025/index.html) <!-- id: iccv2025 -->
